@@ -1,6 +1,6 @@
 ﻿namespace Co453_Graphics
 {
-    partial class Form1
+    partial class GraphicsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // GraphicsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(933, 554);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "GraphicsForm";
+            this.Text = "Graphics Examples Task 6.1 - 6.5";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.GraphicsForm_Paint);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GraphicsForm_KeyPress);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
